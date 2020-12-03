@@ -21,7 +21,7 @@ class DataAugmentation(object):
     
     def _save(self, im, filename, process, number, extension):
         save_name = self.save_path + filename + process + str(number) + extension
-        im.save(save_name, quality=95)
+        im.save(save_name, quality=75)
         
     def _base(self, im, filename, extension):
         self._save(im, filename, "_org", 0, extension)
