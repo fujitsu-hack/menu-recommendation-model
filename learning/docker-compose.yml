@@ -18,6 +18,9 @@ services:
           - type: bind
             source: ./workspace
             target: /home/workspace/
+          - type: bind
+            source: ./workspace/models/resnet50
+            target: /root/.keras/models
         # GPUを使うための設定
         runtime: nvidia
         environment:
