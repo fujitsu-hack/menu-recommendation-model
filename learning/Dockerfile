@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:latest-gpu-py3
+FROM tensorflow/tensorflow:2.0.3-gpu-py3
 
 RUN apt update && apt -y upgrade
 
