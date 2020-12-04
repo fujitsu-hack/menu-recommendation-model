@@ -9,7 +9,7 @@ services:
         # image名をここで編集する(変える)
         image: rrrrind/fuji2_dl
         # container名
-        container_name: "learning&api"
+        container_name: "learning_and_api"
         # ポート番号の指定(ホスト:コンテナ)
         ports:
           - 9990:9990
@@ -19,7 +19,7 @@ services:
             source: ./workspace
             target: /home/workspace/
           - type: bind
-            source: ./workspace/models/resnet50
+            source: ./workspace/learning/models/resnet50
             target: /root/.keras/models
         # GPUを使うための設定
         #runtime: nvidia
