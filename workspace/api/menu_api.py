@@ -12,8 +12,8 @@ app = Flask(__name__)
 http = urllib3.PoolManager()
 
 
-@app.route("/hangouts/<user_lt_trend_id>")
-def hangouts_rec(user_lt_trend_id):
+@app.route("ここを書いてください")
+def menu_model("ここを書いてください"):
     ####### ここを書いてください #######
     rakuten_url = "https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20170426? format=json&categoryType=large&applicationId=8da348a47531325b1c685f27298319a1"
     ##############################
