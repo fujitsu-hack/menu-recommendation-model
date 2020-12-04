@@ -1,0 +1,11 @@
+# -- learning --
+numpy
+pandas
+Pillow
+matplotlib
+jupyterlab
+
+# -- api --
+Flask
+requests
+urllib3
