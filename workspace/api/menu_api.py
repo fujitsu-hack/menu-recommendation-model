@@ -31,6 +31,21 @@ def menu_model("ここを書いてください"):
 
 
 def get_menu_url(rakuten_info, pred_class):
+    """
+        予測されたクラスから，それに対応する楽天レシピAPIの料理のURLを返すメソッド
+        
+        Parameters
+        ----------
+        rakuten_info : list
+            大分類された献立(large)の中身のdictが収納されたlist
+        pred_class : int
+            献立モデルの出力(予測される献立クラス)
+            
+        Returns
+        -------
+        menu_url : str
+             大分類された献立(large)のURL
+        """
     if pred_class == 0:
         class_name = "定番の肉料理"
     elif pred_class == 1:
